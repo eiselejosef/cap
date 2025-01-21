@@ -23,7 +23,10 @@ const translations = {
         navAbout: "About",
         navServices: "Services",
         navBooking: "Booking",
-        navContact: "Contact Us"
+        navContact: "Contact Us",
+        nextButton: "Next",
+        prevButton: "Previous",
+        openGalleryButton: "Open Gallery"
     },
     fr: {
         navbarBrand: "Appartement de Vacances",
@@ -42,7 +45,10 @@ const translations = {
         navAbout: "À propos",
         navServices: "Services",
         navBooking: "Réservation",
-        navContact: "Contactez-nous"
+        navContact: "Contactez-nous",
+        nextButton: "Suivant",
+        prevButton: "Précédent",
+        openGalleryButton: "Ouvrir la Galerie"
     },
     it: {
         navbarBrand: "Appartamento per Vacanze",
@@ -61,7 +67,10 @@ const translations = {
         navAbout: "Informazioni",
         navServices: "Servizi",
         navBooking: "Prenotazione",
-        navContact: "Contattaci"
+        navContact: "Contattaci",
+        nextButton: "Avanti",
+        prevButton: "Precedente",
+        openGalleryButton: "Apri Galleria"
     },
     de: {
         navbarBrand: "Ferienwohnung",
@@ -80,7 +89,10 @@ const translations = {
         navAbout: "Über uns",
         navServices: "Dienstleistungen",
         navBooking: "Buchung",
-        navContact: "Kontaktieren Sie uns"
+        navContact: "Kontaktieren Sie uns",
+        nextButton: "Weiter",
+        prevButton: "Zurück",
+        openGalleryButton: "Galerie öffnen"
     }
 };
 
@@ -104,6 +116,11 @@ function setLanguage(language) {
     document.querySelector('.nav-link[href="#booking"]').innerText = translations[language].navBooking;
     document.querySelector('.nav-link[href="#contact"]').innerText = translations[language].navContact;
 
+    // Gallery
+    document.getElementById('next-btn').innerText = translations[language].nextButton;
+    document.getElementById('prev-btn').innerText = translations[language].prevButton;
+    document.querySelector('button[data-target="#galleryModal"]').innerText = translations[language].openGalleryButton;
+    document.getElementById('galleryModalLabel').innerText = translations[language].galleryTitle;
 }
 
 const imagesPerPage = 1;
@@ -190,6 +207,7 @@ function displayImages() {
         const imgElement = document.createElement('img');
         imgElement.src = image;
         imgElement.className = 'img-fluid rounded';
+        imgElement.addEventListener('click', nextPage); // Add event listener to each image
         galleryImages.appendChild(imgElement);
     });
 
