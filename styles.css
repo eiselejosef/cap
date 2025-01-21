@@ -26,12 +26,14 @@ section {
 
 /* Add this to your styles.css file */
 #title {
-    font-size: 1.2rem; /* Adjust the font size as needed */
-    padding: 0.5rem; /* Add padding to give some space around the text */
-    word-wrap: break-word; /* Ensure long words are wrapped */
+    font-size: 2rem; /* Increase the font size */
+    color: #000; /* Set the text color */
+    padding: 2rem; /* Add more padding */
     text-align: center; /* Center the text */
-    max-width: 100%; /* Ensure the title does not exceed the container width */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+    z-index: 10; /* Ensure it is above other elements */
+    position: relative; /* Ensure z-index works */
+    margin-top: 20px; /* Add margin to the top to create space below the navbar */
+    margin-bottom: -30px; /* Add margin to the bottom to create space above the content */
 }
 
 #gallery {
@@ -84,4 +86,10 @@ footer {
 .pagination-controls button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+
+.slider-img {
+    max-height: 700px;
+    width: auto;
+    object-fit: cover;
 }

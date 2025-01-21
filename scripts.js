@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    setLanguage('fr');
+});
+
 const translations = {
     en: {
         navbarBrand: "Holiday Apartment",
@@ -10,7 +14,13 @@ const translations = {
         bookingTitle: "How to Book",
         bookingText: "To book our apartment, please contact us at <a href='mailto:booking@example.com'>booking@example.com</a> or call us at +33 1 23 45 67 89.",
         contactTitle: "Contact Us",
-        contactText: "If you have any questions or need further information, please feel free to contact us at <a href='mailto:info@example.com'>info@example.com</a> or call us at +33 1 23 45 67 89."
+        contactText: "If you have any questions or need further information, please feel free to contact us at <a href='mailto:info@example.com'>info@example.com</a> or call us at +33 1 23 45 67 89.",
+        navHome: "Home",
+        navGallery: "Gallery",
+        navAbout: "About",
+        navServices: "Services",
+        navBooking: "Booking",
+        navContact: "Contact Us"
     },
     fr: {
         navbarBrand: "Appartement de Vacances",
@@ -23,7 +33,13 @@ const translations = {
         bookingTitle: "Comment réserver",
         bookingText: "Pour réserver notre appartement, veuillez nous contacter à <a href='mailto:booking@example.com'>booking@example.com</a> ou appelez-nous au +33 1 23 45 67 89.",
         contactTitle: "Contactez-nous",
-        contactText: "Si vous avez des questions ou avez besoin de plus d'informations, n'hésitez pas à nous contacter à <a href='mailto:info@example.com'>info@example.com</a> ou appelez-nous au +33 1 23 45 67 89."
+        contactText: "Si vous avez des questions ou avez besoin de plus d'informations, n'hésitez pas à nous contacter à <a href='mailto:info@example.com'>info@example.com</a> ou appelez-nous au +33 1 23 45 67 89.",
+        navHome: "Accueil",
+        navGallery: "Galerie",
+        navAbout: "À propos",
+        navServices: "Services",
+        navBooking: "Réservation",
+        navContact: "Contactez-nous"
     },
     it: {
         navbarBrand: "Appartamento per Vacanze",
@@ -36,7 +52,13 @@ const translations = {
         bookingTitle: "Come prenotare",
         bookingText: "Per prenotare il nostro appartamento, contattaci a <a href='mailto:booking@example.com'>booking@example.com</a> o chiamaci al +33 1 23 45 67 89.",
         contactTitle: "Contattaci",
-        contactText: "Se avete domande o avete bisogno di ulteriori informazioni, non esitate a contattarci a <a href='mailto:info@example.com'>info@example.com</a> o chiamateci al +33 1 23 45 67 89."
+        contactText: "Se avete domande o avete bisogno di ulteriori informazioni, non esitate a contattarci a <a href='mailto:info@example.com'>info@example.com</a> o chiamateci al +33 1 23 45 67 89.",
+        navHome: "Home",
+        navGallery: "Galleria",
+        navAbout: "Informazioni",
+        navServices: "Servizi",
+        navBooking: "Prenotazione",
+        navContact: "Contattaci"
     },
     de: {
         navbarBrand: "Ferienwohnung",
@@ -49,7 +71,13 @@ const translations = {
         bookingTitle: "Wie man bucht",
         bookingText: "Um unsere Wohnung zu buchen, kontaktieren Sie uns bitte unter <a href='mailto:booking@example.com'>booking@example.com</a> oder rufen Sie uns an unter +33 1 23 45 67 89.",
         contactTitle: "Kontaktieren Sie uns",
-        contactText: "Wenn Sie Fragen haben oder weitere Informationen benötigen, kontaktieren Sie uns bitte unter <a href='mailto:info@example.com'>info@example.com</a> oder rufen Sie uns an unter +33 1 23 45 67 89."
+        contactText: "Wenn Sie Fragen haben oder weitere Informationen benötigen, kontaktieren Sie uns bitte unter <a href='mailto:info@example.com'>info@example.com</a> oder rufen Sie uns an unter +33 1 23 45 67 89.",
+        navHome: "Startseite",
+        navGallery: "Galerie",
+        navAbout: "Über uns",
+        navServices: "Dienstleistungen",
+        navBooking: "Buchung",
+        navContact: "Kontaktieren Sie uns"
     }
 };
 
@@ -65,6 +93,14 @@ function setLanguage(language) {
     document.getElementById('booking-text').innerHTML = translations[language].bookingText;
     document.getElementById('contact-title').innerText = translations[language].contactTitle;
     document.getElementById('contact-text').innerHTML = translations[language].contactText;
+
+    document.querySelector('.nav-link[href="#"]').innerText = translations[language].navHome;
+    document.querySelector('.nav-link[href="#gallery"]').innerText = translations[language].navGallery;
+    document.querySelector('.nav-link[href="#info"]').innerText = translations[language].navAbout;
+    document.querySelector('.nav-link[href="#services"]').innerText = translations[language].navServices;
+    document.querySelector('.nav-link[href="#booking"]').innerText = translations[language].navBooking;
+    document.querySelector('.nav-link[href="#contact"]').innerText = translations[language].navContact;
+
 }
 
 const imagesPerPage = 3;
@@ -173,3 +209,7 @@ function nextPage() {
 }
 
 document.addEventListener('DOMContentLoaded', loadImages);
+
+document.addEventListener('DOMContentLoaded', function() {
+    setLanguage('fr');
+});
