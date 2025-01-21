@@ -103,11 +103,7 @@
 <div class="container mt-4">
     <section id="gallery" class="mt-4">
         <h2 id="gallery-title">Gallery</h2>
-        <div class="image-container" id="gallery-images"></div>
-        <div class="pagination-controls">
-            <button id="prev-btn" onclick="prevPage()">Previous</button>
-            <button id="next-btn" onclick="nextPage()">Next</button>
-        </div>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#galleryModal">Open Gallery</button>
     </section>
     <section id="info" class="mt-4">
         <h2 id="info-title">About the Apartment</h2>
@@ -133,6 +129,28 @@
 <footer class="bg-primary text-white text-center py-3 mt-4">
     <p>&copy; 2023 Holiday Apartment in France</p>
 </footer>
+
+<!-- Gallery Modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="galleryModalLabel">Gallery</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="gallery-images" class="image-container"></div>
+                <div class="pagination-controls">
+                    <button id="prev-btn" onclick="prevPage()">Previous</button>
+                    <button id="next-btn" onclick="nextPage()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

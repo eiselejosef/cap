@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     setLanguage('fr');
+
+    // Call displayImages to show the initial set of images
+    displayImages();
 });
 
 const translations = {
@@ -103,10 +106,10 @@ function setLanguage(language) {
 
 }
 
-const imagesPerPage = 3;
+const imagesPerPage = 1;
 let currentPage = 1;
 let images = [
-    'images/IMG_2921.JPG',
+    'images/10_IMG_2921.JPG',
     'images/11_DSC_0478.JPG',
     'images/12_DSC_0088.JPG',
     'images/12_DSC_0114.JPG',
@@ -207,9 +210,3 @@ function nextPage() {
         displayImages();
     }
 }
-
-document.addEventListener('DOMContentLoaded', loadImages);
-
-document.addEventListener('DOMContentLoaded', function() {
-    setLanguage('fr');
-});
