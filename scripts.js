@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Call displayImages to show the initial set of images
     displayImages();
+
+    // Add event listener to open the gallery modal when the "Gallery" link is clicked
+    document.getElementById('open-gallery-link').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        $('#galleryModal').modal('show'); // Open the gallery modal
+    });
 });
 
 const translations = {
@@ -15,9 +21,7 @@ const translations = {
         servicesTitle: "Services",
         servicesText: "We offer a range of services to make your stay more comfortable, including free Wi-Fi, daily housekeeping, and a 24-hour front desk.",
         bookingTitle: "How to Book",
-        bookingText: "To book our apartment, please contact us at <a href='mailto:booking@example.com'>booking@example.com</a> or call us at +33 1 23 45 67 89.",
-        contactTitle: "Contact Us",
-        contactText: "If you have any questions or need further information, please feel free to contact us at <a href='mailto:info@example.com'>info@example.com</a> or call us at +33 1 23 45 67 89.",
+        bookingText: "To book our apartment, please contact us <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\">leboncoin</a>",
         navHome: "Home",
         navGallery: "Gallery",
         navAbout: "About",
@@ -37,9 +41,7 @@ const translations = {
         servicesTitle: "Services",
         servicesText: "Nous offrons une gamme de services pour rendre votre séjour plus confortable, y compris le Wi-Fi gratuit, le ménage quotidien et une réception ouverte 24h/24.",
         bookingTitle: "Comment réserver",
-        bookingText: "Pour réserver notre appartement, veuillez nous contacter à <a href='mailto:booking@example.com'>booking@example.com</a> ou appelez-nous au +33 1 23 45 67 89.",
-        contactTitle: "Contactez-nous",
-        contactText: "Si vous avez des questions ou avez besoin de plus d'informations, n'hésitez pas à nous contacter à <a href='mailto:info@example.com'>info@example.com</a> ou appelez-nous au +33 1 23 45 67 89.",
+        bookingText: "Pour réserver notre appartement, veuillez nous contacter à <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\">leboncoin</a>",
         navHome: "Accueil",
         navGallery: "Galerie",
         navAbout: "À propos",
@@ -59,9 +61,7 @@ const translations = {
         servicesTitle: "Servizi",
         servicesText: "Offriamo una gamma di servizi per rendere il vostro soggiorno più confortevole, tra cui Wi-Fi gratuito, pulizie giornaliere e una reception aperta 24 ore su 24.",
         bookingTitle: "Come prenotare",
-        bookingText: "Per prenotare il nostro appartamento, contattaci a <a href='mailto:booking@example.com'>booking@example.com</a> o chiamaci al +33 1 23 45 67 89.",
-        contactTitle: "Contattaci",
-        contactText: "Se avete domande o avete bisogno di ulteriori informazioni, non esitate a contattarci a <a href='mailto:info@example.com'>info@example.com</a> o chiamateci al +33 1 23 45 67 89.",
+        bookingText: "Per prenotare il nostro appartamento, contattaci a <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\">leboncoin</a>",
         navHome: "Home",
         navGallery: "Galleria",
         navAbout: "Informazioni",
@@ -81,9 +81,7 @@ const translations = {
         servicesTitle: "Dienstleistungen",
         servicesText: "Wir bieten eine Reihe von Dienstleistungen, um Ihren Aufenthalt angenehmer zu gestalten, darunter kostenloses WLAN, tägliche Reinigung und eine 24-Stunden-Rezeption.",
         bookingTitle: "Wie man bucht",
-        bookingText: "Um unsere Wohnung zu buchen, kontaktieren Sie uns bitte unter <a href='mailto:booking@example.com'>booking@example.com</a> oder rufen Sie uns an unter +33 1 23 45 67 89.",
-        contactTitle: "Kontaktieren Sie uns",
-        contactText: "Wenn Sie Fragen haben oder weitere Informationen benötigen, kontaktieren Sie uns bitte unter <a href='mailto:info@example.com'>info@example.com</a> oder rufen Sie uns an unter +33 1 23 45 67 89.",
+        bookingText: "Um unsere Wohnung zu buchen, kontaktieren Sie uns bitte unter <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\">leboncoin</a>",
         navHome: "Startseite",
         navGallery: "Galerie",
         navAbout: "Über uns",
@@ -106,15 +104,12 @@ function setLanguage(language) {
     document.getElementById('services-text').innerText = translations[language].servicesText;
     document.getElementById('booking-title').innerText = translations[language].bookingTitle;
     document.getElementById('booking-text').innerHTML = translations[language].bookingText;
-    document.getElementById('contact-title').innerText = translations[language].contactTitle;
-    document.getElementById('contact-text').innerHTML = translations[language].contactText;
 
     document.querySelector('.nav-link[href="#"]').innerText = translations[language].navHome;
     document.querySelector('.nav-link[href="#gallery"]').innerText = translations[language].navGallery;
     document.querySelector('.nav-link[href="#info"]').innerText = translations[language].navAbout;
     document.querySelector('.nav-link[href="#services"]').innerText = translations[language].navServices;
     document.querySelector('.nav-link[href="#booking"]').innerText = translations[language].navBooking;
-    document.querySelector('.nav-link[href="#contact"]').innerText = translations[language].navContact;
 
     // Gallery
     document.getElementById('next-btn').innerText = translations[language].nextButton;
@@ -203,12 +198,22 @@ function displayImages() {
     const end = start + imagesPerPage;
     const currentImages = images.slice(start, end);
 
-    currentImages.forEach(image => {
+    currentImages.forEach((image, index) => {
         const imgElement = document.createElement('img');
         imgElement.src = image;
         imgElement.className = 'img-fluid rounded';
         imgElement.addEventListener('click', nextPage); // Add event listener to each image
-        galleryImages.appendChild(imgElement);
+
+        const imgContainer = document.createElement('div');
+        imgContainer.className = 'img-container';
+        imgContainer.appendChild(imgElement);
+
+        const imgIndex = document.createElement('div');
+        imgIndex.className = 'img-index';
+        imgIndex.innerText = `${start + index + 1} / ${images.length}`;
+        imgContainer.appendChild(imgIndex);
+
+        galleryImages.appendChild(imgContainer);
     });
 
     document.getElementById('prev-btn').disabled = currentPage === 1;

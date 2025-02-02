@@ -99,3 +99,7 @@ footer {
     object-fit: cover;
 }
 
+#gallery {
+    display: none;
+}
+

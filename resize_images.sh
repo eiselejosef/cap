@@ -9,7 +9,7 @@ for img in images-original/*; do
   filename=$(basename "$img")
 
   # Resize the image to 800px width, auto-orient, and move it to the images folder
-  convert "$img" -auto-orient -resize 800x "images/$filename"
+  convert "$img" -auto-orient -resize 1200x "images/$filename"
 done
 
 echo "Images have been resized, auto-oriented, and moved to the images folder."
