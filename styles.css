@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #007bff; /* Bootstrap primary color */
+    background-color: #9acbff; /* Bootstrap primary color */
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -32,7 +32,7 @@ section {
 /* Add this to your styles.css file */
 #title {
     font-size: 2rem; /* Increase the font size */
-    color: #000; /* Set the text color */
+    color: white; /* Set the text color */
     padding: 2rem; /* Add more padding */
     text-align: center; /* Center the text */
     z-index: 10; /* Ensure it is above other elements */
@@ -66,7 +66,7 @@ section {
 }
 
 footer {
-    background-color: #007bff; /* Bootstrap primary color */
+    background-color: #9acbff !important;
     color: #fff;
     text-align: center;
     padding: 1em 0;
