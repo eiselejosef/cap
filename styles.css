@@ -103,3 +103,8 @@ footer {
     display: none;
 }
 
+.nav-link {
+    font-size: 1.3rem; /* Change to your desired font size */
+    color: #333; /* Optional: Change the text color */
+}
+
