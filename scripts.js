@@ -30,10 +30,11 @@ const translations = {
             <strong>INCLUDED IN THE RENTAL PRICE:</strong><br>
             * CLEANING<br>
             * ACCESS TO THE POOLS<br>
-            * COVERED PARKING<br><br>
+            * COVERED PARKING<br>
+            * Personalized welcome and check-in and check-out<br><br>
             <strong>FOR AN ADDITIONAL FEE:</strong><br>
             BED LINEN AND TOWELS on request.<br>
-            INTERNET/WIFI, personalized welcome package and check-in/check-out.<br>
+            INTERNET/WIFI: package <br><br>
             <strong>Deposit:</strong> 600 € per stay<br><br>
             <em>Please note:</em> Apartment access without elevator. No pets allowed, non-smoking apartment.
         `,
@@ -78,6 +79,7 @@ const translations = {
         bookingText: "To book our apartment or obtain additional information, please contact us via the platform <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\" target=\"_blank\">leboncoin</a>",
         routeTitle: "Location",
         routeText: `
+            Résidence Village CAP ESTEREL, rue de la Rade, AGAY – 83700 Saint-Raphael, France<br><br>
             <ul>
                 <li><strong>By car:</strong> Highway A8, exit 38: Fréjus/Saint-Raphaël</li>
                 <li><strong>By train:</strong> Agay stations (small station 800 m) or Saint-Raphaël Valescure (9 km). Connections by bus or taxi.</li>
@@ -121,11 +123,12 @@ const translations = {
             <strong>INCLU DANS LE PRIX DE LA LOCATION :</strong><br>
             * MENAGE<br>
             * ACCES AUX PISCINES<br>
-            * PARKING COUVERT<br><br>
+            * PARKING COUVERT<br>
+            * Accueil personnalisé et états des lieux d'entrée et de sortie<br><br>
             <strong>EN SUPPLEMENT :</strong><br>
             LINGE DE LITS ET SERVIETTES sur demande.<br>
-            INTERNET/WIFI, forfait Accueil personnalisé et états des lieux d'entrée et de sortie.<br>
-            <strong>Caution :</strong> 600 € par séjour<br><br>
+            INTERNET/WIFI: forfait <br><br>
+            <strong>Caution :</strong> 600 € par séjour<br>
             <em>Veuillez noter:</em> Accès appartement sans ascenseur. Animaux non admis, appartement non-fumeur.
         `,
         servicesTitle: "l'Esterel",
@@ -169,6 +172,7 @@ const translations = {
         bookingText: "Pour réserver notre appartement ou obtenir des informations supplémentaires, veuillez nous contacter via la plateforme <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\" target=\"_blank\">leboncoin</a>",
         routeTitle: "Localisation",
         routeText: `
+            Résidence Village CAP ESTEREL, rue de la Rade, AGAY – 83700 Saint-Raphael, France<br><br>
             <ul>
                 <li><strong>En voiture :</strong> Autoroute A8, sortie 38 : Fréjus/Saint-Raphaël</li>
                 <li><strong>En train :</strong> Gares d’Agay (petite gare à 800 m) ou Saint-Raphaël Valescure (9 km). Liaisons par bus ou taxi.</li>
@@ -212,10 +216,11 @@ const translations = {
             <strong>INCLUSO NEL PREZZO DELL'AFFITTO:</strong><br>
             * PULIZIA<br>
             * ACCESSO ALLE PISCINE<br>
-            * PARCHEGGIO COPERTO<br><br>
+            * PARCHEGGIO COPERTO<br>
+            * Accoglienza personalizzata e check-in e check-out<br><br>
             <strong>A PAGAMENTO:</strong><br>
             BIANCHERIA DA LETTO E ASCIUGAMANI su richiesta.<br>
-            INTERNET/WIFI, forfait Accoglienza personalizzata e stato dei luoghi all'entrata e all'uscita.<br>
+            INTERNET/WIFI: forfait <br><br>
             <strong>Cauzione:</strong> 600 € per soggiorno<br><br>
             <em>Si prega di notare:</em> Accesso all'appartamento senza ascensore. Animali non ammessi, appartamento non fumatori.
         `,
@@ -260,6 +265,7 @@ const translations = {
         bookingText: "Per prenotare il nostro appartamento o ottenere ulteriori informazioni, contattaci tramite la piattaforma <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\" target=\"_blank\">leboncoin</a>",
         routeTitle: "Localizzazione",
         routeText: `
+            Résidence Village CAP ESTEREL, rue de la Rade, AGAY – 83700 Saint-Raphael, France<br><br>
             <ul>
                 <li><strong>In auto:</strong> Autostrada A8, uscita 38: Fréjus/Saint-Raphaël</li>
                 <li><strong>In treno:</strong> Stazioni di Agay (piccola stazione a 800 m) o Saint-Raphaël Valescure (9 km). Collegamenti con autobus o taxi.</li>
@@ -303,10 +309,11 @@ const translations = {
             <strong>IM MIETPREIS ENTHALTEN:</strong><br>
             * REINIGUNG<br>
             * ZUGANG ZU DEN SCHWIMMBÄDERN<br>
-            * ÜBERDACHTER PARKPLATZ<br><br>
+            * ÜBERDACHTER PARKPLATZ<br>
+            * Persönlicher Empfang beim Ein- und Auschecken<br><br>
             <strong>GEGEN AUFPREIS:</strong><br>
             BETTWÄSCHE UND HANDTÜCHER auf Anfrage.<br>
-            INTERNET/WLAN, Pauschale für persönlichen Empfang und Abnahme bei An- und Abreise.<br>
+            INTERNET/WLAN: Package <br><br>
             <strong>Kaution:</strong> 600 € pro Aufenthalt<br><br>
             <em>Bitte beachten:</em> Zugang zur Wohnung ohne Aufzug. Haustiere nicht erlaubt, Nichtraucherwohnung.
         `,
@@ -351,6 +358,7 @@ const translations = {
         bookingText: "Um unsere Wohnung zu buchen oder weitere Informationen zu erhalten, kontaktieren Sie uns bitte über die Plattform <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\" target=\"_blank\">leboncoin</a>",
         routeTitle: "Anreise",
         routeText: `
+            Résidence Village CAP ESTEREL, rue de la Rade, AGAY – 83700 Saint-Raphael, France<br><br>
             <ul>
                 <li><strong>Mit dem Auto:</strong> Autobahn A8, Ausfahrt 38: Fréjus/Saint-Raphaël</li>
                 <li><strong>Mit dem Zug:</strong> Bahnhöfe Agay (kleiner Bahnhof 800 m) oder Saint-Raphaël Valescure (9 km). Verbindungen mit Bus oder Taxi.</li>
