@@ -37,16 +37,59 @@ const translations = {
             <strong>Deposit:</strong> 600 € per stay<br><br>
             <em>Please note:</em> Apartment access without elevator. No pets allowed, non-smoking apartment.
         `,
-        servicesTitle: "Services",
-        servicesText: "We offer a range of services to make your stay more comfortable.",
+        servicesTitle: "l'Esterel",
+        servicesText: `
+            <p>
+                Discover CAP ESTEREL holiday village in the heart of 210 hectares of nature and gardens with a view of the bay of Agay and the red rocks of the Esterel Massif! Pedestrian holiday village combining sport and nature in the town of Agay (2 km from the center), guarded residence.
+            </p>
+            <ul>
+                <li>5 swimming pools including one with waves and 1 heated pool, 2 with slides</li>
+                <li>Numerous sports activities: fitness, aquagym, dance, pétanque, table tennis and free entertainment (shows, cinema, etc.). Some activities require registration or are payable at the Pierre & Vacances reception.</li>
+                <li>Golf courses, pétanque, tennis/padel, football and basketball</li>
+                <li>Archery, mini-golf</li>
+                <li>Leisure and hiking (accompanied) for all ages</li>
+                <li>Market every Wednesday during the summer period</li>
+                <li>Tourist train from mid-June to mid-September to get to the beach/Dramont station, mini-golf, play areas, swimming pools</li>
+                <li>Supermarket, restaurants, bars, ice cream parlors and shops, laundry, bike rental, sandy beaches in the immediate vicinity.</li>
+                <li>Baby, children and teen clubs, circus school (extra charge - information/registration at the P&V reception)</li>
+                <li>Spa</li>
+            </ul>
+            <p>
+                <a href="https://capesterelascape.fr/actualites-et-informations/cap-esterel-bienvenue-a-tous-les-locataires/" target="_blank">Discover the Cap Esterel holiday village</a>
+            </p>
+            <p>
+                Nearby attractions:
+                <ul>
+                    <li>Anthéor 8km</li>
+                    <li>Saint-Raphaël 9km</li>
+                    <li>Fréjus 13km</li>
+                    <li>Lac de Saint-Cassien 32km</li>
+                    <li>Saint-Tropez 50km</li>
+                    <li>Nice 76 km</li>
+                </ul>
+            </p>
+            <p>
+                <a href="https://www.calameo.com/read/000014214b6b8c6e8cb82" target="_blank">Tourist guide of Esterel</a><br>
+                <a href="https://www.saint-raphael.com/fr/activites-de-loisirs/" target="_blank">Activities in Saint-Raphaël and its region</a><br>
+                <a href="https://www.experiencecotedazur.com/activites/saint-raphael" target="_blank">Experience Côte d'Azur</a>
+            </p>
+        `,
         bookingTitle: "How to Book",
-        bookingText: "To book our apartment or obtain additional information, please contact us via the platform <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\">leboncoin</a>",
+        bookingText: "To book our apartment or obtain additional information, please contact us via the platform <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\" target=\"_blank\">leboncoin</a>",
+        routeTitle: "Location",
+        routeText: `
+            <ul>
+                <li><strong>By car:</strong> Highway A8, exit 38: Fréjus/Saint-Raphaël</li>
+                <li><strong>By train:</strong> Agay stations (small station 800 m) or Saint-Raphaël Valescure (9 km). Connections by bus or taxi.</li>
+                <li><strong>By plane:</strong> Nice Airport (71 km). Connections by train, bus or taxi.</li>
+            </ul>
+        `,
         navHome: "Home",
         navGallery: "Gallery",
         navAbout: "Apartment",
-        navServices: "Services",
+        navServices: "l'Esterel",
         navBooking: "Booking",
-        navContact: "Contact Us",
+        navRoute: "Route",
         nextButton: "Next",
         prevButton: "Previous",
         openGalleryButton: "Open Gallery"
@@ -76,16 +119,59 @@ const translations = {
             <strong>Caution :</strong> 600 € par séjour<br><br>
             <em>Veuillez noter:</em> Accès appartement sans ascenseur. Animaux non admis, appartement non-fumeur.
         `,
-        servicesTitle: "Services",
-        servicesText: "Nous offrons une gamme de services pour rendre votre séjour plus confortable.",
+        servicesTitle: "l'Esterel",
+        servicesText: `
+            <p>
+                Découvrez CAP ESTEREL village-vacances au coeur de 210 hectares de nature et jardins avec vue sur la baie d'Agay et les roches rouges du Massif de l'Esterel! Village vacances piétonnier alliant sport et nature sur la commune d'Agay (à 2km du centre), résidence gardée.
+            </p>
+            <ul>
+                <li>5 piscines dont une à vagues et 1 piscine chauffée, 2 avec toboggans</li>
+                <li>Nombreuses activités sportives : fitness, aquagym, danse, pétanque, tennis de table et animations gratuites (spectacles, cinéma, etc). Certaines activités sur inscription ou payantes à la réception de Pierre & Vacances.</li>
+                <li>Terrains de golf, pétanque, tennis/padel, foot et basket</li>
+                <li>Tir à l'arc, mini-golf</li>
+                <li>Loisirs et randonnées (accompagnées) pour tout âge</li>
+                <li>Marché tous les mercredis en période estivale</li>
+                <li>Petit train touristique de mi-Juin à mi-Sept. pour se rendre à la plage/gare du Dramont, mini-golf, espaces de jeux, piscines</li>
+                <li>Supermarché, restaurants, bars, glaciers et magasins, laverie, location vélos, plages de sable à proximité immédiate.</li>
+                <li>Clubs bébés, enfants et ados, école de cirque (en supplément - renseignements/inscriptions auprès de la réception de P&V)</li>
+                <li>Spa</li>
+            </ul>
+            <p>
+                <a href="https://capesterelascape.fr/actualites-et-informations/cap-esterel-bienvenue-a-tous-les-locataires/" target="_blank">Découvrir le village-vacances de Cap Esterel</a>
+            </p>
+            <p>
+                Attractions à proximité:
+                <ul>
+                    <li>Anthéor 8km
+                    <li>Saint-Raphaël 9km
+                    <li>Fréjus 13km
+                    <li>Lac de Saint-Cassien 32km
+                    <li>Saint-Tropez 50km
+                    <li>Nice 76 km
+                </ul>
+            </p>
+            <p>
+                <a href="https://www.calameo.com/read/000014214b6b8c6e8cb82" target="_blank">Guide touristique de l'Esterel</a><br>
+                <a href="https://www.saint-raphael.com/fr/activites-de-loisirs/" target="_blank">Les activités sur Saint-Raphaël et sa région</a><br>
+                <a href="https://www.experiencecotedazur.com/activites/saint-raphael" target="_blank">Expérience Côte d'Azur</a>
+            </p>
+        `,
         bookingTitle: "Comment réserver",
-        bookingText: "Pour réserver notre appartement ou obtenir des informations supplémentaires, veuillez nous contacter via la plateforme <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\">leboncoin</a>",
+        bookingText: "Pour réserver notre appartement ou obtenir des informations supplémentaires, veuillez nous contacter via la plateforme <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\" target=\"_blank\">leboncoin</a>",
+        routeTitle: "Localisation",
+        routeText: `
+            <ul>
+                <li><strong>En voiture :</strong> Autoroute A8, sortie 38 : Fréjus/Saint-Raphaël</li>
+                <li><strong>En train :</strong> Gares d’Agay (petite gare à 800 m) ou Saint-Raphaël Valescure (9 km). Liaisons par bus ou taxi.</li>
+                <li><strong>En avion :</strong> Aéroport de Nice (71 km). Liaisons par train, bus ou taxi.</li>
+            </ul>
+        `,
         navHome: "Accueil",
         navGallery: "Galerie",
         navAbout: "Appartement",
-        navServices: "Services",
+        navServices: "l'Esterel",
         navBooking: "Réservation",
-        navContact: "Contactez-nous",
+        navRoute: "Localisation",
         nextButton: "Suivant",
         prevButton: "Précédent",
         openGalleryButton: "Ouvrir la Galerie"
@@ -115,16 +201,59 @@ const translations = {
             <strong>Cauzione:</strong> 600 € per soggiorno<br><br>
             <em>Si prega di notare:</em> Accesso all'appartamento senza ascensore. Animali non ammessi, appartamento non fumatori.
         `,
-        servicesTitle: "Servizi",
-        servicesText: "Offriamo una gamma di servizi per rendere il vostro soggiorno più confortevole, tra cui Wi-Fi gratuito.",
+        servicesTitle: "l'Esterel",
+        servicesText: `
+            <p>
+                Scoprite il villaggio vacanze CAP ESTEREL nel cuore di 210 ettari di natura e giardini con vista sulla baia di Agay e le rocce rosse del Massiccio dell'Esterel! Villaggio vacanze pedonale che combina sport e natura nella città di Agay (2 km dal centro), residenza sorvegliata.
+            </p>
+            <ul>
+                <li>5 piscine di cui una con onde e 1 piscina riscaldata, 2 con scivoli</li>
+                <li>Numerose attività sportive: fitness, aquagym, danza, pétanque, ping pong e intrattenimento gratuito (spettacoli, cinema, ecc.). Alcune attività richiedono la registrazione o sono a pagamento presso la reception di Pierre & Vacances.</li>
+                <li>Campi da golf, pétanque, tennis/padel, calcio e basket</li>
+                <li>Tiro con l'arco, mini-golf</li>
+                <li>Tempo libero ed escursioni (accompagnate) per tutte le età</li>
+                <li>Mercato ogni mercoledì durante il periodo estivo</li>
+                <li>Trenino turistico da metà giugno a metà settembre per raggiungere la spiaggia/stazione di Dramont, mini-golf, aree giochi, piscine</li>
+                <li>Supermercato, ristoranti, bar, gelaterie e negozi, lavanderia, noleggio biciclette, spiagge di sabbia nelle immediate vicinanze.</li>
+                <li>Club per bambini, ragazzi e adolescenti, scuola di circo (a pagamento - informazioni/registrazione presso la reception di P&V)</li>
+                <li>Spa</li>
+            </ul>
+            <p>
+                <a href="https://capesterelascape.fr/actualites-et-informations/cap-esterel-bienvenue-a-tous-les-locataires/" target="_blank">Scopri il villaggio vacanze di Cap Esterel</a>
+            </p>
+            <p>
+                Attrazioni nelle vicinanze:
+                <ul>
+                    <li>Anthéor 8km</li>
+                    <li>Saint-Raphaël 9km</li>
+                    <li>Fréjus 13km</li>
+                    <li>Lac de Saint-Cassien 32km</li>
+                    <li>Saint-Tropez 50km</li>
+                    <li>Nizza 76 km</li>
+                </ul>
+            </p>
+            <p>
+                <a href="https://www.calameo.com/read/000014214b6b8c6e8cb82" target="_blank">Guida turistica dell'Esterel</a><br>
+                <a href="https://www.saint-raphael.com/fr/activites-de-loisirs/" target="_blank">Attività a Saint-Raphaël e nella sua regione</a><br>
+                <a href="https://www.experiencecotedazur.com/activites/saint-raphael" target="_blank">Esperienza Côte d'Azur</a>
+            </p>
+        `,
         bookingTitle: "Come prenotare",
-        bookingText: "Per prenotare il nostro appartamento o ottenere ulteriori informazioni, contattaci tramite la piattaforma <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\">leboncoin</a>",
+        bookingText: "Per prenotare il nostro appartamento o ottenere ulteriori informazioni, contattaci tramite la piattaforma <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\" target=\"_blank\">leboncoin</a>",
+        routeTitle: "Localizzazione",
+        routeText: `
+            <ul>
+                <li><strong>In auto:</strong> Autostrada A8, uscita 38: Fréjus/Saint-Raphaël</li>
+                <li><strong>In treno:</strong> Stazioni di Agay (piccola stazione a 800 m) o Saint-Raphaël Valescure (9 km). Collegamenti con autobus o taxi.</li>
+                <li><strong>In aereo:</strong> Aeroporto di Nizza (71 km). Collegamenti con treno, autobus o taxi.</li>
+            </ul>
+        `,
         navHome: "Home",
         navGallery: "Galleria",
         navAbout: "Appartamento",
-        navServices: "Servizi",
-        navBooking: "Prenotazione",
-        navContact: "Contattaci",
+        navServices: "l'Esterel",
+        navBooking: "Percorso",
+        navRoute: "Contattaci",
         nextButton: "Avanti",
         prevButton: "Precedente",
         openGalleryButton: "Apri Galleria"
@@ -154,16 +283,59 @@ const translations = {
             <strong>Kaution:</strong> 600 € pro Aufenthalt<br><br>
             <em>Bitte beachten:</em> Zugang zur Wohnung ohne Aufzug. Haustiere nicht erlaubt, Nichtraucherwohnung.
         `,
-        servicesTitle: "Dienstleistungen",
-        servicesText: "Wir bieten eine Reihe von Dienstleistungen, um Ihren Aufenthalt angenehmer zu gestalten.",
+        servicesTitle: "l'Esterel",
+        servicesText: `
+            <p>
+                Entdecken Sie das Feriendorf CAP ESTEREL im Herzen von 210 Hektar Natur und Gärten mit Blick auf die Bucht von Agay und die roten Felsen des Esterel-Massivs! Fußgänger-Feriendorf, das Sport und Natur in der Stadt Agay (2 km vom Zentrum entfernt) kombiniert, bewachte Residenz.
+            </p>
+            <ul>
+                <li>5 Schwimmbäder, darunter eines mit Wellen und 1 beheiztes Schwimmbad, 2 mit Rutschen</li>
+                <li>Zahlreiche Sportaktivitäten: Fitness, Aquagym, Tanz, Pétanque, Tischtennis und kostenlose Unterhaltung (Shows, Kino, etc.). Einige Aktivitäten erfordern eine Anmeldung oder sind an der Rezeption von Pierre & Vacances kostenpflichtig.</li>
+                <li>Golfplätze, Pétanque, Tennis/Padel, Fußball und Basketball</li>
+                <li>Bogenschießen, Minigolf</li>
+                <li>Freizeit und Wandern (begleitet) für alle Altersgruppen</li>
+                <li>Markt jeden Mittwoch während der Sommerzeit</li>
+                <li>Touristenzug von Mitte Juni bis Mitte September, um zum Strand/Bahnhof Dramont zu gelangen, Minigolf, Spielbereiche, Schwimmbäder</li>
+                <li>Supermarkt, Restaurants, Bars, Eisdielen und Geschäfte, Wäscherei, Fahrradverleih, Sandstrände in unmittelbarer Nähe.</li>
+                <li>Baby-, Kinder- und Jugendclubs, Zirkusschule (gegen Aufpreis - Informationen/Anmeldung an der P&V-Rezeption)</li>
+                <li>Spa</li>
+            </ul>
+            <p>
+                <a href="https://capesterelascape.fr/actualites-et-informations/cap-esterel-bienvenue-a-tous-les-locataires/" target="_blank">Entdecken Sie das Feriendorf Cap Esterel</a>
+            </p>
+            <p>
+                Sehenswürdigkeiten in der Nähe:
+                <ul>
+                    <li>Anthéor 8km</li>
+                    <li>Saint-Raphaël 9km</li>
+                    <li>Fréjus 13km</li>
+                    <li>Lac de Saint-Cassien 32km</li>
+                    <li>Saint-Tropez 50km</li>
+                    <li>Nizza 76 km</li>
+                </ul>
+            </p>
+            <p>
+                <a href="https://www.calameo.com/read/000014214b6b8c6e8cb82" target="_blank">Touristenführer von Esterel</a><br>
+                <a href="https://www.saint-raphael.com/fr/activites-de-loisirs/" target="_blank">Aktivitäten in Saint-Raphaël und Umgebung</a><br>
+                <a href="https://www.experiencecotedazur.com/activites/saint-raphael" target="_blank">Erlebnis Côte d'Azur</a>
+            </p>
+        `,
         bookingTitle: "Wie man bucht",
-        bookingText: "Um unsere Wohnung zu buchen oder weitere Informationen zu erhalten, kontaktieren Sie uns bitte über die Plattform <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\">leboncoin</a>",
+        bookingText: "Um unsere Wohnung zu buchen oder weitere Informationen zu erhalten, kontaktieren Sie uns bitte über die Plattform <a href=\"https://www.leboncoin.fr/ad/locations_saisonnieres/2326754619\" target=\"_blank\">leboncoin</a>",
+        routeTitle: "Anreise",
+        routeText: `
+            <ul>
+                <li><strong>Mit dem Auto:</strong> Autobahn A8, Ausfahrt 38: Fréjus/Saint-Raphaël</li>
+                <li><strong>Mit dem Zug:</strong> Bahnhöfe Agay (kleiner Bahnhof 800 m) oder Saint-Raphaël Valescure (9 km). Verbindungen mit Bus oder Taxi.</li>
+                <li><strong>Mit dem Flugzeug:</strong> Flughafen Nizza (71 km). Verbindungen mit Zug, Bus oder Taxi.</li>
+            </ul>
+        `,
         navHome: "Startseite",
         navGallery: "Galerie",
         navAbout: "Ferienwohnung",
-        navServices: "Dienstleistungen",
+        navServices: "l'Esterel",
         navBooking: "Buchung",
-        navContact: "Kontaktieren Sie uns",
+        navRoute: "Anreise",
         nextButton: "Weiter",
         prevButton: "Zurück",
         openGalleryButton: "Galerie öffnen"
@@ -177,15 +349,18 @@ function setLanguage(language) {
     document.getElementById('info-title').innerText = translations[language].infoTitle;
     document.getElementById('info-text').innerHTML = translations[language].infoText;
     document.getElementById('services-title').innerText = translations[language].servicesTitle;
-    document.getElementById('services-text').innerText = translations[language].servicesText;
+    document.getElementById('services-text').innerHTML = translations[language].servicesText;
     document.getElementById('booking-title').innerText = translations[language].bookingTitle;
     document.getElementById('booking-text').innerHTML = translations[language].bookingText;
+    document.getElementById('route-title').innerText = translations[language].routeTitle;
+    document.getElementById('route-text').innerHTML = translations[language].routeText;
 
     document.querySelector('.nav-link[href="#"]').innerText = translations[language].navHome;
     document.querySelector('.nav-link[href="#gallery"]').innerText = translations[language].navGallery;
     document.querySelector('.nav-link[href="#info"]').innerText = translations[language].navAbout;
     document.querySelector('.nav-link[href="#services"]').innerText = translations[language].navServices;
     document.querySelector('.nav-link[href="#booking"]').innerText = translations[language].navBooking;
+    document.querySelector('.nav-link[href="#route"]').innerText = translations[language].navRoute;
 
     // Gallery
     document.getElementById('next-btn').innerText = translations[language].nextButton;

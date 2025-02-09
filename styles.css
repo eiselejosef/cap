@@ -27,6 +27,7 @@ section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 80px; /* Add padding to the top of the sections to ensure they are not hidden behind the navbar */
 }
 
 /* Add this to your styles.css file */
@@ -47,6 +48,10 @@ section {
 
 #info {
     background-color: #fafad2; /* Light goldenrod yellow */
+}
+
+#services {
+    background-color: #ffce9a;
 }
 
 #booking {
