@@ -84,6 +84,15 @@ const translations = {
                 <li><strong>By plane:</strong> Nice Airport (71 km). Connections by train, bus or taxi.</li>
             </ul>
         `,
+        impressumTitle: "Legal Notice",
+        impressumText: `
+            <p>
+                <strong>Owner: </strong>Céline Tambour<br>
+                <strong>Address: </strong>Résidence Village CAP ESTEREL, rue de la Rade, AGAY – 83700 Saint-Raphael, France<br>
+                <strong>Website: </strong> <a href="https://capesterel.info/" target="_blank">https://capesterel.info/</a><br>
+                <strong>Content Responsible according to § 55 Abs. 2 RStV: </strong>Céline Tambour<br>
+            </p>
+        `,
         navHome: "Home",
         navGallery: "Gallery",
         navAbout: "Apartment",
@@ -165,6 +174,15 @@ const translations = {
                 <li><strong>En train :</strong> Gares d’Agay (petite gare à 800 m) ou Saint-Raphaël Valescure (9 km). Liaisons par bus ou taxi.</li>
                 <li><strong>En avion :</strong> Aéroport de Nice (71 km). Liaisons par train, bus ou taxi.</li>
             </ul>
+        `,
+        impressumTitle: "Impressum",
+        impressumText: `
+            <p>
+                <strong>Propriétaire: </strong>Céline Tambour<br>
+                <strong>Adresse: </strong>Résidence Village CAP ESTEREL, rue de la Rade, AGAY – 83700 Saint-Raphael, France<br>
+                <strong>Site Web: </strong> <a href="https://capesterel.info/" target="_blank">https://capesterel.info/</a><br>
+                <strong>Responsable du contenu selon § 55 Abs. 2 RStV: </strong>Céline Tambour<br>
+            </p>
         `,
         navHome: "Accueil",
         navGallery: "Galerie",
@@ -248,6 +266,15 @@ const translations = {
                 <li><strong>In aereo:</strong> Aeroporto di Nizza (71 km). Collegamenti con treno, autobus o taxi.</li>
             </ul>
         `,
+        impressumTitle: "Impressum",
+        impressumText: `
+            <p>
+                <strong>Proprietario: </strong>Céline Tambour<br>
+                <strong>Indirizzo: </strong>Résidence Village CAP ESTEREL, rue de la Rade, AGAY – 83700 Saint-Raphael, Francia<br>
+                <strong>Sito Web: </strong> <a href="https://capesterel.info/" target="_blank">https://capesterel.info/</a><br>
+                <strong>Responsabile del contenuto secondo § 55 Abs. 2 RStV: </strong>Céline Tambour<br>
+            </p>
+        `,
         navHome: "Home",
         navGallery: "Galleria",
         navAbout: "Appartamento",
@@ -330,6 +357,15 @@ const translations = {
                 <li><strong>Mit dem Flugzeug:</strong> Flughafen Nizza (71 km). Verbindungen mit Zug, Bus oder Taxi.</li>
             </ul>
         `,
+        impressumTitle: "Impressum",
+        impressumText: `
+            <p>
+                <strong>Eigentümer: </strong>Céline Tambour<br>
+                <strong>Adresse: </strong>Résidence Village CAP ESTEREL, rue de la Rade, AGAY – 83700 Saint-Raphael, Frankreich<br>
+                <strong>Webseite: </strong> <a href="https://capesterel.info/" target="_blank">https://capesterel.info/</a><br>
+                <strong>Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: </strong>Céline Tambour<br>
+            </p>
+        `,
         navHome: "Startseite",
         navGallery: "Galerie",
         navAbout: "Ferienwohnung",
@@ -354,6 +390,8 @@ function setLanguage(language) {
     document.getElementById('booking-text').innerHTML = translations[language].bookingText;
     document.getElementById('route-title').innerText = translations[language].routeTitle;
     document.getElementById('route-text').innerHTML = translations[language].routeText;
+    document.getElementById('impressum-title').innerText = translations[language].impressumTitle;
+    document.getElementById('impressum-text').innerHTML = translations[language].impressumText;
 
     document.querySelector('.nav-link[href="#"]').innerText = translations[language].navHome;
     document.querySelector('.nav-link[href="#gallery"]').innerText = translations[language].navGallery;
