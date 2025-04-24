@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    setLanguage('fr');
+    const userLanguage = navigator.language || navigator.userLanguage;
+    const supportedLanguages = ['en', 'fr', 'de', 'it'];
+    const defaultLanguage = 'fr';
+
+    // Determine the initial language
+    const initialLanguage = supportedLanguages.find(lang => userLanguage.startsWith(lang)) || defaultLanguage;
+
+    setLanguage(initialLanguage);
 
     // Call displayImages to show the initial set of images
     displayImages();
@@ -103,7 +110,9 @@ const translations = {
         navRoute: "Route",
         nextButton: "Next",
         prevButton: "Previous",
-        openGalleryButton: "Open Gallery"
+        openGalleryButton: "Open Gallery",
+        ogTitle: "STUNNING Sea View – Agay – Apartment T2 / CAP ESTEREL",
+        ogDescription: "Beautiful 2-room apartment, 28m2, 4 beds, 2nd and top floor, terrace 8m2. Stunning panoramic sea view."
     },
     fr: {
         navbarBrand: "Appartement de vacances",
@@ -196,7 +205,10 @@ const translations = {
         navRoute: "Localisation",
         nextButton: "Suivant",
         prevButton: "Précédent",
-        openGalleryButton: "Ouvrir la Galerie"
+        openGalleryButton: "Ouvrir la Galerie",
+        ogTitle: "SPLENDIDE Vue Mer panoramique – Agay – Appart T2 / CAP ESTEREL",
+        ogDescription: "Joli 2 pièces 28m2, 4 couchages, 2ème et dernier étage, terrasse 8m2. Magnifique vue mer panoramique."
+
     },
     it: {
         navbarBrand: "Appartamento per Vacanze",
@@ -289,7 +301,10 @@ const translations = {
         navRoute: "Contattaci",
         nextButton: "Avanti",
         prevButton: "Precedente",
-        openGalleryButton: "Apri Galleria"
+        openGalleryButton: "Apri Galleria",
+        ogTitle: "SPLENDIDA Vista Mare – Agay – Appartamento T2 / CAP ESTEREL",
+        ogDescription: "Bellissimo bilocale, 28m2, 4 posti letto, 2° e ultimo piano, terrazza 8m2. Splendida vista mare panoramica."
+
     },
     de: {
         navbarBrand: "Ferienwohnung",
@@ -382,7 +397,9 @@ const translations = {
         navRoute: "Anreise",
         nextButton: "Weiter",
         prevButton: "Zurück",
-        openGalleryButton: "Galerie öffnen"
+        openGalleryButton: "Galerie öffnen",
+        ogTitle: "WUNDERSCHÖNER Meerblick – Agay – Wohnung T2 / CAP ESTEREL",
+        ogDescription: "Schöne 2-Zimmer-Wohnung, 28m2, 4 Schlafplätze, 2. und oberste Etage, Terrasse 8m2. Wunderschöner Meerblick."
     }
 };
 
@@ -413,6 +430,10 @@ function setLanguage(language) {
     document.getElementById('prev-btn').innerText = translations[language].prevButton;
     document.querySelector('button[data-target="#galleryModal"]').innerText = translations[language].openGalleryButton;
     document.getElementById('galleryModalLabel').innerText = translations[language].galleryTitle;
+
+    // OG Tags
+    document.querySelector('meta[property="og:title"]').setAttribute('content', translations[language].ogTitle);
+    document.querySelector('meta[property="og:description"]').setAttribute('content', translations[language].ogDescription);
 }
 
 const imagesPerPage = 1;
