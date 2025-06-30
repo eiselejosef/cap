@@ -38,10 +38,11 @@ const translations = {
             * CLEANING<br>
             * ACCESS TO THE POOLS<br>
             * COVERED PARKING<br>
+            * INTERNET/WIFI: Free access to high speed internet via optical fibre<br>
+            * TV: More then 200 channels<br>
             * Personalized welcome and check-in and check-out<br><br>
             <strong>FOR AN ADDITIONAL FEE:</strong><br>
-            BED LINEN AND TOWELS on request.<br>
-            INTERNET/WIFI: package <br><br>
+            BED LINEN AND TOWELS on request.<br><br>
             <strong>Deposit:</strong> 600 € per stay<br><br>
             <em>Please note:</em> Apartment access without elevator. No pets allowed, non-smoking apartment.
         `,
@@ -133,10 +134,11 @@ const translations = {
             * MENAGE<br>
             * ACCES AUX PISCINES<br>
             * PARKING COUVERT<br>
+            * INTERNET/WIFI : Accès gratuit à Internet haut débit via la fibre optique<br>
+            * TÉLÉVISION : Plus de 200 chaînes<br>
             * Accueil personnalisé et états des lieux d'entrée et de sortie<br><br>
             <strong>EN SUPPLEMENT :</strong><br>
-            LINGE DE LITS ET SERVIETTES sur demande.<br>
-            INTERNET/WIFI: forfait <br><br>
+            LINGE DE LITS ET SERVIETTES sur demande.<br><br>
             <strong>Caution :</strong> 600 € par séjour<br>
             <em>Veuillez noter:</em> Accès appartement sans ascenseur. Animaux non admis, appartement non-fumeur.
         `,
@@ -229,10 +231,11 @@ const translations = {
             * PULIZIA<br>
             * ACCESSO ALLE PISCINE<br>
             * PARCHEGGIO COPERTO<br>
+            * INTERNET/WIFI: Accesso gratuito a Internet ad alta velocità tramite fibra ottica<br>
+            * TV: Oltre 200 canali<br>
             * Accoglienza personalizzata e check-in e check-out<br><br>
             <strong>A PAGAMENTO:</strong><br>
-            BIANCHERIA DA LETTO E ASCIUGAMANI su richiesta.<br>
-            INTERNET/WIFI: forfait <br><br>
+            BIANCHERIA DA LETTO E ASCIUGAMANI su richiesta.<br><br>
             <strong>Cauzione:</strong> 600 € per soggiorno<br><br>
             <em>Si prega di notare:</em> Accesso all'appartamento senza ascensore. Animali non ammessi, appartamento non fumatori.
         `,
@@ -325,10 +328,11 @@ const translations = {
             * REINIGUNG<br>
             * ZUGANG ZU DEN SCHWIMMBÄDERN<br>
             * ÜBERDACHTER PARKPLATZ<br>
+            * INTERNET/WLAN: Kostenloser Zugang zu Hochgeschwindigkeitsinternet über Glasfaser<br>
+            * TV: Mehr als 200 Sender<br>
             * Persönlicher Empfang beim Ein- und Auschecken<br><br>
             <strong>GEGEN AUFPREIS:</strong><br>
-            BETTWÄSCHE UND HANDTÜCHER auf Anfrage.<br>
-            INTERNET/WLAN: Package <br><br>
+            BETTWÄSCHE UND HANDTÜCHER auf Anfrage.<br><br>
             <strong>Kaution:</strong> 600 € pro Aufenthalt<br><br>
             <em>Bitte beachten:</em> Zugang zur Wohnung ohne Aufzug. Haustiere nicht erlaubt, Nichtraucherwohnung.
         `,
